@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>sqljdbc-osgi</artifactId>
+        <artifactId>sqljdbc-osgi-bundle</artifactId>
         <groupId>com.microsoft</groupId>
-        <version>4.0.2206.100</version>
+        <version>7.2.1</version>
     </parent>
 
-    <artifactId>sqljdbc3-osgi</artifactId>
-    <name>sqljdbc3-osgi</name>
+    <artifactId>sqljdbc-osgi</artifactId>
+    <name>sqljdbc-osgi</name>
     <packaging>bundle</packaging>
-    <description>OSGi wrapper bundle for the Microsoft SQL Server Type 3 JDBC driver.</description>
+    <description>OSGi wrapper bundle for the Microsoft SQL Server JDBC driver.</description>
 
     <build>
         <plugins>
@@ -44,7 +44,7 @@
         <!-- Microsoft SQL Server JDBC driver JAR -->
         <dependency>
             <groupId>com.microsoft</groupId>
-            <artifactId>sqljdbc3</artifactId>
+            <artifactId>sqljdbc</artifactId>
             <version>${project.version}</version>
             <optional>true</optional>
         </dependency>

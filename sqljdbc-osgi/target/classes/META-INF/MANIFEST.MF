@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1550194738499
+Build-Jdk: 1.8.0_181
+Built-By: charles
+Bundle-Description: OSGi wrapper bundle for the Microsoft SQL Server JDB
+ C driver.
+Bundle-License: non-free
+Bundle-ManifestVersion: 2
+Bundle-Name: sqljdbc-osgi
+Bundle-SymbolicName: com.microsoft.sqljdbc-osgi
+Bundle-Vendor: Microsoft
+Bundle-Version: 7.2.1
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *;scope=compile|runtime;type=!pom;inline=true
+Export-Package: com.microsoft.sqlserver.jdbc;version="7.2.1";uses:="com.
+ microsoft.sqlserver.jdbc.dataclassification,javax.naming,javax.naming.s
+ pi,javax.security.auth.callback,javax.security.auth.login,javax.sql,jav
+ ax.transaction.xa,microsoft.sql,org.ietf.jgss",com.microsoft.sqlserver.
+ jdbc.dataclassification;version="7.2.1",com.microsoft.sqlserver.jdbc.dn
+ s;version="7.2.1";uses:="javax.naming",com.microsoft.sqlserver.jdbc.osg
+ i;version="7.2.1";uses:="javax.sql,org.osgi.framework,org.osgi.service.
+ jdbc",microsoft.sql;version="7.2.1",mssql.googlecode.cityhash;version="
+ 7.2.1",mssql.googlecode.concurrentlinkedhashmap;version="7.2.1"
+Import-Package: com.microsoft.aad.adal4j;resolution:=optional,com.micros
+ oft.azure;resolution:=optional,com.microsoft.azure.keyvault;resolution:
+ =optional,com.microsoft.azure.keyvault.authentication;resolution:=optio
+ nal,com.microsoft.azure.keyvault.models;resolution:=optional,com.micros
+ oft.azure.keyvault.webkey;resolution:=optional,com.microsoft.azure.seri
+ alizer;resolution:=optional,com.microsoft.rest;resolution:=optional,com
+ .microsoft.rest.credentials;resolution:=optional,com.microsoft.rest.pro
+ tocol;resolution:=optional,javax.crypto;resolution:=optional,javax.cryp
+ to.spec;resolution:=optional,javax.naming;resolution:=optional,javax.na
+ ming.directory;resolution:=optional,javax.naming.spi;resolution:=option
+ al,javax.net.ssl;resolution:=optional,javax.security.auth;resolution:=o
+ ptional,javax.security.auth.callback;resolution:=optional,javax.securit
+ y.auth.kerberos;resolution:=optional,javax.security.auth.login;resoluti
+ on:=optional,javax.security.auth.x500;resolution:=optional,javax.sql;re
+ solution:=optional,javax.transaction.xa;resolution:=optional,javax.xml;
+ resolution:=optional,javax.xml.parsers;resolution:=optional,javax.xml.s
+ tream;resolution:=optional,javax.xml.transform;resolution:=optional,jav
+ ax.xml.transform.dom;resolution:=optional,javax.xml.transform.sax;resol
+ ution:=optional,javax.xml.transform.stax;resolution:=optional,javax.xml
+ .transform.stream;resolution:=optional,okhttp3;resolution:=optional,org
+ .ietf.jgss;resolution:=optional,org.osgi.framework;resolution:=optional
+ ,org.osgi.service.jdbc;resolution:=optional,org.w3c.dom;resolution:=opt
+ ional,org.xml.sax;resolution:=optional,retrofit2;resolution:=optional
+Tool: Bnd-2.1.0.20130426-122213

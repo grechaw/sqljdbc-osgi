@@ -5,15 +5,14 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.microsoft</groupId>
-  <artifactId>sqljdbc-osgi</artifactId>
-  <version>4.0.2206.100</version>
+  <artifactId>sqljdbc-osgi-bundle</artifactId>
+  <version>7.2.1</version>
   <packaging>pom</packaging>
-  <name>sqljdbc-osgi</name>
+  <name>sqljdbc-osgi-bundle</name>
   <description>OSGi wrappers for Microsoft SQL JDBC drivers.</description>
 
   <modules>
-    <module>sqljdbc3-osgi</module>
-    <module>sqljdbc4-osgi</module>
+    <module>sqljdbc-osgi</module>
   </modules>
 
   <build>
